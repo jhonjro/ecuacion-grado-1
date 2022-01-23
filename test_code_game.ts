@@ -117,6 +117,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	};
 
 	resolver.addEventListener('click', () => {
+		alert(
+			`Sintaxis:\n    número operador número = número operador número,\ndonde uno de esos números debe de ser 'x' y los demás números enteros.\nNota:\n    Los operadores aceptados son los siguientes :  *, /, +, -\nEjemplo:\n    34534+56756 = 45645/x`
+		);
+
 		let equation = prompt('Ingrese ecuación con variable x: ');
 		let resultado = resolve(equation);
 

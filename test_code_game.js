@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         return resultado;
     };
     resolver.addEventListener('click', function () {
+        alert("Sintaxis:\n    n\u00FAmero operador n\u00FAmero = n\u00FAmero operador n\u00FAmero,\ndonde uno de esos n\u00FAmeros debe de ser 'x' y los dem\u00E1s n\u00FAmeros enteros.\nNota:\n    Los operadores aceptados son los siguientes :  *, /, +, -\nEjemplo:\n    34534+56756 = 45645/x");
         var equation = prompt('Ingrese ecuación con variable x: ');
         var resultado = resolve(equation);
         resolver.style.visibility = 'hidden';
