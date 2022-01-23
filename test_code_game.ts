@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-	console.log(event);
-
 	let albert: string =
 		'https://ichef.bbci.co.uk/news/640/amz/worldservice/live/assets/images/2015/04/17/150417194023_einstein-lengua.jpg';
 	let guiño: string =
@@ -117,9 +115,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	};
 
 	resolver.addEventListener('click', () => {
-		alert(
-			`Sintaxis:\n    número operador número = número operador número,\ndonde uno de esos números debe de ser 'x' y los demás números enteros.\nNota:\n    Los operadores aceptados son los siguientes :  *, /, +, -\nEjemplo:\n    34534+56756 = 45645/x`
-		);
+		if (resolver.innerText.indexOf('Click aquí') != -1) {
+			alert(
+				`Sintaxis:\n    número operador número = número operador número,\ndonde uno de esos números debe de ser 'x' y los demás números enteros.\nNota:\n    Los operadores aceptados son los siguientes :  *, /, +, -\nEjemplo:\n    34534+56756 = 45645/x`
+			);
+		}
 
 		let equation = prompt('Ingrese ecuación con variable x: ');
 		let resultado = resolve(equation);
