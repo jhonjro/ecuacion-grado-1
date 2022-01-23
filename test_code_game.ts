@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 			}
 		});
 
-		if (arr.reduce((k, i) => k + i) != 1) {
+		if (arr.length == 0 || arr.reduce((k, i) => k + i) != 1) {
 			throw 'Humano estúpido 3.';
 		}
 
