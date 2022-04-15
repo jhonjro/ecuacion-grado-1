@@ -8,4 +8,4 @@ donde uno de esos números debe de ser 'x' y los demás números enteros.
 Los operadores aceptados son los siguientes :  *, /, +, -
 ## Ejemplo:
 34534+56756 = 45645/x
-# COMMIT DE PRUEBA
+# COMMIT DE PRUEBA 2
